@@ -8,9 +8,15 @@
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
         <link href="css/font/css/brands.css" rel="stylesheet">
         <link href="css/font/css/solid.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Kanit:wght@300&family=Nunito:wght@200&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
         <title>Company name</title>
     </head>
     <body>
+        <div class="grid-container">
         <header>
             <nav>
                 <a href="index.html" id="logo"><img src="img/ressurser/logo1.png" alt="logobilde på menyen"></a>
@@ -23,20 +29,24 @@
             </nav>
         </header>
         <main>
-            <div>
-                <img src="https://placehold.co/600x400" alt="Portfolio bakgrunnsbilde">
+            <div id="bakgrunn">
+                <img src="#" alt="Portfolio bakgrunnsbilde">
                 <h1>Portfolio</h1>
             </div>
             <section class="Previous">
                 <h2>Explore previous jobs</h2>
                 <ul>
-                    <li>Branding</li>
-                    <li>Design</li>
-                    <li>Development</li>
+                    <li><a href="#branding">Branding</a></li>
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#development">Development</a></li>
                 </ul>
             </section>
-            <section class="branding">
+            <section id="brandingH2">
+                <article>
                 <h2>Branding</h2>
+                </article>
+            </section>
+            <section id="branding">
                 <article>
                     <img src="https://placehold.co/400" alt="Første bilde av bildekategori branding">
                     <p>Et harum quidem</p>
@@ -49,12 +59,14 @@
                     <img src="https://placehold.co/400" alt="Tredje bilde av bilde kategori branding">
                     <p>Et harum quidem</p>
                 </article>
+            </section>
+            <section id="branding-ekstra">
                 <article>
                     <img src="https://placehold.co/400" alt="Fjerde bilde av bildekategori branding" class="fire">
                     <p>Et harum quidem</p>
                 </article>
             </section>
-            <section class="design">
+            <section id="design">
                 <h2>Design</h2>
                 <article>
                     <img src="https://placehold.co/400" alt="Første bilde av bildekategori design">
@@ -69,7 +81,7 @@
                     <p>Et harum quidem</p>
                 </article>
             </section>
-            <section class="development">
+            <section id="development">
                 <article>
                     <img src="https://placehold.co/400" alt="Første bilde av bildekategor development">
                     <p>Et harum quidem</p>
@@ -82,13 +94,14 @@
         </main>
         <footer>
             <section class="some">
-                <img src="img/ressurser/logo1.png" alt="logobilde på footermeny">
+                <a href="index.html"><img src="img/ressurser/logo1.png" alt="logobilde på footermeny"></a>
                 <p>Company copyright 2023</p>
                     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
             </section>
     </footer>
+        </div>
     <script>
         function navigateToContact() {
   window.location.href = 'about.html#Contact';

@@ -1,6 +1,15 @@
 /* Header - meny for alle sidene */
+.grid-container{
+    display: grid;
+     grid-template-areas:
+    'header header header'
+    'main main main'
+    "footer footer footer";
+}
+
 header{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Kanit', sans-serif;
+    grid-area: header;
 }
 
 header nav ul li a{
@@ -41,13 +50,17 @@ header nav a{
 /* Body for alle sidene */
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Kanit', sans-serif;
+    max-width: 1600px;
 }
 
 /* Footer for alle sidene */
 
 footer{
+    font-family: 'Kanit', sans-serif;
     background-color: #252525;
+    grid-area: footer;
+    position: relative;
 }
 
 .some{
@@ -83,7 +96,9 @@ footer{
 }
 
 
-
+main{
+    grid-area: main;
+}
 
 /* main på index */
 
@@ -141,7 +156,6 @@ footer{
 
 #about-company{
     padding: 50px;
-    border-style: solid;
     margin: 70px;
 }
 
@@ -149,6 +163,7 @@ footer{
 #about-company{
     display: flex;
     align-items: center;
+    background-color: #e6bd43;
 }
 
 #about-company img{
@@ -214,9 +229,67 @@ footer{
 }
 
 /* main på products side */
+
+/* #bakgrunn img{
+    width: 1600px;
+    height: 300px;
+} */
+
+/* #brandingH2{
+    text-align: left;
+    justify-self: left;
+    justify-content: left;
+    padding: 1rem;
+} */
+
+/* #branding{
+    display:flex; */
+    /* place-items: initial; */
+    /* margin: 20px;
+    padding: 20px;
+} */
+
 #branding{
     display: flex;
+    justify-content: space-between;
+
 }
+
+#branding p{
+    justify-content: center;
+    text-align: center;
+}
+
+#branding article{
+    display: flex;
+}
+
+#branding img{
+    display: flex;
+    width: ;
+}
+
+#branding-ekstra{
+    display: flex;
+}
+
+/* #branding h2{
+    text-align: left;
+    justify-self: left;
+    justify-content: left;
+    padding-top: 20px;
+} */
+
+
+/* #branding img{
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-between;
+} */
+
+
+/* main på about side */
  .formInfo {
     width: 45%; 
     float: right;
