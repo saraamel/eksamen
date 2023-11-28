@@ -1,11 +1,17 @@
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}/* brukt fra tidligere forelesning */
+
+
 /* Header - meny for alle sidene */
-.grid-container{
+/* .grid-container{
     display: grid;
      grid-template-areas:
     'header header header'
     'main main main'
     "footer footer footer";
-}
+} */
 
 header{
     font-family: 'Kanit', sans-serif;
@@ -416,4 +422,11 @@ main{
 
 iframe{
     width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }/* brukt fra tidligere forelesning */
+
 }
