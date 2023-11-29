@@ -300,7 +300,6 @@ main{
 #branding{
     display: flex;
     justify-content: space-between;
-
 }
 
 #branding p{
@@ -327,7 +326,6 @@ main{
     display: flex;
     width: 300px;
     padding-bottom: 40px;
-
 }
 
 #branding-ekstra{
